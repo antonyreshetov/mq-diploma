@@ -1,0 +1,221 @@
+@font-face {
+font-family: "Open Sans";
+src: url("../OpenSans-Bold.woff");
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("..OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+}
+
+.header {
+  background-image: url("../img/football_1920.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header::after {
+  content:"";
+  background-color: #0a0e34;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.container {
+  padding-top: 3%;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 7.2%;
+}
+
+.header_logo {
+  width: 12.5%;
+  position: relative;
+  z-index: 2;
+  margin-left: 43.75%;
+  margin-right: 43.75%;
+}
+
+.header_title {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  padding-top: 19%;
+  padding-bottom: 13.8%;
+}
+
+.title_text {
+  display: block;
+  font-size: 5.625rem;
+}
+
+.line_1 {
+  text-align: left;
+}
+
+.line_2 {
+  text-align: right;
+}
+
+.apps_links {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+
+.apple_link, .android_link {
+  width: 310px;
+  background-color: #5e42b0;
+  display: flex;
+  border-radius: 35px;
+}
+
+.android_link:nth-child(2) {
+  margin-left: 3.3%;
+}
+
+.apple_logo, .android_logo {
+  width: 14.5%;
+  margin-right: 8%;
+}
+
+.apple_logo {
+  margin-left: 38px;
+}
+
+.android_logo {
+  margin-left: 57px;
+}
+
+.link_text {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding-bottom: 7.1%;
+  padding-top: 8.4%;
+  color: #fff;
+}
+
+.link_text_line_2 {
+  font-weight: bold;
+}
+
+.main_content {
+  position: relative;
+}
+
+.athlets, .players {
+  /* width: 80%; */
+  margin: 0 auto;
+}
+
+.section_title {
+  margin-left: 52.6%;
+  font-size: 3.625rem;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 6.1%;
+  padding-bottom: 2.8%;
+}
+
+.players_title {
+  margin-left: 10%;
+}
+
+.article_title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  color: #c1c1c1;
+  padding-bottom: 1.57%;
+  padding-top: 57px;
+}
+
+.footballer {
+  position: absolute;
+  top: 27px;
+  right: 50%;
+}
+
+.athlets_article, .players_article {
+  font-size: 1.25rem;
+  /* margin-left: 50%; */
+}
+
+.athlets_article_text, .players_article_text {
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+}
+
+.article_box {
+  margin-left: 52.6%;
+  width: 37.3%;
+  padding-bottom: 60px;
+}
+
+.players_article_box {
+  margin-left: 10%;
+  width: 39.3%;
+  padding-bottom: 60px;
+}
+
+.collaboration {
+  background-color: #f6f4fa;
+}
+
+.players_growth {
+  background-color: #5e42b0;
+  color: #fff;
+}
+
+.growth {
+  background-color: #0a0e34;
+  color: #fff;
+}
+
+.basketballer {
+  position: absolute;
+  bottom: 33px;
+  right: 6.36%;
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+  .header {
+    background-image: url("../img/football_1280.jpg");
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    background-image: url("../img/football_767.jpg");
+  }
+}
