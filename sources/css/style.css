@@ -151,13 +151,38 @@ a {
   margin-left: 10%;
 }
 
+.title_box {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 5%;
+}
+
 .article_title {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 2.25rem;
   color: #c1c1c1;
   padding-bottom: 1.57%;
-  padding-top: 5%;
+}
+
+.number {
+  font-size: 1.125rem;
+  border-bottom: solid 5px #5e42b0;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  font-weight: bold;
+  padding-top: 7px;
+  margin-right: 10px;
+}
+
+.last_athlets_article_number {
+  border-bottom: solid 5px #fff;
+  color: black;
+}
+
+.last_players_article_number {
+  border-bottom: solid 5px #fff;
+  color: #9173e6;
 }
 
 .footballer {
@@ -165,6 +190,7 @@ a {
   top: 1.55%;
   right: 50%;
   width: 29.5%;
+  min-width: 500px;
 }
 
 .article_text {
@@ -201,8 +227,9 @@ a {
 .basketballer {
   position: absolute;
   top: 52%;
-  left: 42.4%;
+  right: 6.5%;
   width: 51.1%;
+  min-width: 700px;
 }
 
 .article {
@@ -219,7 +246,7 @@ a {
   margin-bottom: 5.73%;
 }
 
-.article_number {
+.article_number_box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,6 +262,11 @@ a {
   font-weight: 700;
 }
 
+.article_number {
+  font-size: 1.5rem;
+  border-bottom: solid 5px #8f7bc8;
+}
+
 .article_discription {
   width: 50%;
   padding-top: 12.5%;
@@ -246,6 +278,11 @@ a {
 .find_contact {
   padding-right: 6.7%;
   padding-left: 10.3%;
+  order: 1;
+}
+
+.second_article_img {
+  order: 2;
 }
 
 .img_box {
@@ -294,7 +331,7 @@ a {
 }
 
 .footer_title_discription_line2 {
-color: #5e42b0;
+color: #a496ca;
 font-size: 1.875rem;
 font-weight: normal;
 }
@@ -324,7 +361,19 @@ font-weight: normal;
   padding-bottom: 2.6%;
 }
 
-@media (min-width: 961px) and (max-width: 1280px) {
+@media (max-width: 1304px) {
+  .article_discription {
+    padding-right: 6.7%;
+    padding-top: 7%;
+  }
+
+  .find_contact {
+    padding-top: 7%;
+    padding-left: 6.7%;
+  }
+}
+
+@media (max-width: 1280px) {
   .header {
     background-image: url("../img/football_1280.jpg");
   }
@@ -333,5 +382,156 @@ font-weight: normal;
 @media (max-width: 960px) {
   .header {
     background-image: url("../img/football_767.jpg");
+}
+
+  .container {
+    width: 100%;
+    padding-top: 5.1%;
+    padding-bottom: 11.8%;
   }
+
+  .header_logo {
+    width: 26.7%;
+    margin-left: 36.65%;
+    margin-right: 36.65%;
+  }
+
+  .header_title {
+    padding-bottom: 41%;
+    padding-top: 23.4%;
+  }
+
+  .title_text {
+    font-size: 4rem;
+  }
+
+  .line_1 {
+    margin-left: 6.9%;
+  }
+
+  .line_2 {
+    margin-right: 6.53%;
+    margin-left: 26.05%;
+    text-align: left;
+  }
+
+  .article_box {
+    width: 57.6%;
+    margin-left: 38.2%;
+  }
+
+  .players_article_box {
+    width: 56%;
+    margin-left: 4.17%;
+  }
+
+  .athlets_title {
+    margin-left: 38.2%;
+    font-size: 5rem;
+  }
+
+  .players_title {
+    margin-left: 4.17%;
+    font-size: 5rem;
+  }
+
+  .players_article_box, .article_box {
+    padding-top: 5.86%;
+  }
+
+  .article_title {
+    font-size: 2rem;
+  }
+
+  .article_text {
+    font-size: 1rem;
+  }
+
+  .footballer {
+    top: 6.241%;
+    left: -19.43%;
+  }
+
+  .basketballer {
+    top: 54%;
+    min-width: 0;
+    right: 0;
+  }
+
+  .article {
+    display: block;
+  }
+
+  .article_discription {
+    width: 91.54%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .article_head_title {
+    font-size: 5rem;
+    margin-top: 10%;
+    margin-bottom: 3.9%;
+  }
+
+  .article_text {
+    font-size: 1.5rem;
+    margin-bottom: 12%;
+  }
+
+  .find_contact {
+    order: 2;
+  }
+
+  .img {
+    order: 1;
+  }
+
+  .article_number_box {
+    width: 15.1%;
+    height: 13.7%;
+    margin-left: 4.3%;
+    margin-top: 66%;
+    bottom: auto;
+  }
+
+  .second_number_box {
+    margin-top: -11%;
+  }
+
+  .footer {
+    background-image: url("../img/game_767.jpg");
+  }
+
+  .footer_container {
+    display: block;
+    padding-top: 16.4%;
+    padding-bottom: 37%;
+    text-align: center;
+  }
+
+  .footer_img_box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+
+  .footer_title_discription_line2 {
+    font-size: 2rem;
+    margin-top: 1%;
+  }
+
+  .footer_links {
+    padding-bottom: 7.16%;
+  }
+
+  .footer_logo {
+    width: 26.7%;
+    margin-left: 36.65%;
+    padding-bottom: 3%;
+  }
+
+
 }
