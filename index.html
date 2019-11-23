@@ -42,7 +42,7 @@
       <img class="img" src="sources\img\footballer_566.png" alt="footballer">
     </picture>
     <h2 class="section_title athlets_title">athlets</h2>
-    <article class="athlets_article">
+    <article class="athlets_article connection">
       <div class="article_box">
         <div class="title_box">
             <span class="number">01</span>
@@ -73,7 +73,7 @@ to training classes, tutor sessions, etc</p>
   </section>
   <section class="players">
     <h2 class="section_title players_title">players</h2>
-    <article class="players_article">
+    <article class="players_article connection">
       <div class="players_article_box">
         <div class="title_box">
             <span class="number">01</span>
@@ -101,6 +101,7 @@ to training classes, tutor sessions, etc</p>
       </div>
     </article>
     <picture class="basketballer">
+      <!-- почему не работает тег picture??? всегда подгружается изображение из тега <img> -->
       <source
       media="(min-width: 961px)"
       srcset="sources\img\basketballer_991.png">
@@ -115,7 +116,7 @@ to training classes, tutor sessions, etc</p>
   </section>
 </main>
 
-<article class="article">
+<div class="article">
   <div class="article_number_box">
     <span class="article_number">01</span>
   </div>
@@ -136,8 +137,8 @@ to training classes, tutor sessions, etc</p>
     <p class="article_text">Post videos with your skills, Like and follow others
 to be more popular.</p>
   </div>
-</article>
-<article class="article">
+</div>
+<div class="article">
   <picture class="img_box second_article_img">
     <source
     media="(min-width: 961px)"
@@ -158,8 +159,8 @@ to be more popular.</p>
     <p class="article_text">Contact others to find right coach or athlete you are
 looking for.</p>
   </div>
-</article>
-<article class="article">
+</div>
+<div class="article">
   <div class="article_number_box">
     <span class="article_number">03</span>
   </div>
@@ -181,7 +182,7 @@ looking for.</p>
 can be overwhelming, we want to make this
 enjoyable experience.</p>
   </div>
-</article>
+</div>
 
 <footer class="footer">
   <div class="footer_container">
@@ -189,6 +190,7 @@ enjoyable experience.</p>
       <img class="footer_surface_logo" src="sources\svg\surface_logo.svg" alt="surface logo">
     </div>
     <h2 class="footer_title">
+      <!-- чтобы использовать конструкцию <h2>......<span>......</span></h2> придется оборачивать заголовок в еще один <div>? -->
       <p class="footer_title_discription">Download app</p>
       <p class="footer_title_discription_line2">Show everyone what you can do!</p>
     </h2>
