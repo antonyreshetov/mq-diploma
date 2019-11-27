@@ -1,4 +1,8 @@
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Diploma</title>
   <link rel="stylesheet" href="sources/css/style.css">
 </head>
 <header class="header">
@@ -11,17 +15,17 @@
   <div class="apps_links">
     <a class="apple_link" href="#">
   <img class="apple_logo" src="sources\svg\apple_logo_black.svg" alt="apple logo">
-  <span class="link_text">
-  <p>Download on the</p>
-  <p class="link_text_line_2">app store</p>
-  </span>
+  <p class="link_text">
+  <span>Download on the</span>
+  <span class="link_text_line_2">app store</span>
+  </p>
     </a>
     <a class="android_link" href="#">
   <img class="android_logo" src="sources\svg\google-play.svg" alt="android logo">
-  <span class="link_text">
-  <p>Get it on</p>
-  <p class="link_text_line_2">google play</p>
-  </span>
+  <p class="link_text">
+  <span class="link_text_line_1">Get it on</span>
+  <span class="link_text_line_2">google play</span>
+  </p>
     </a>
   </div>
   </div>
@@ -31,14 +35,11 @@
   <section class="athlets">
     <picture class="footballer">
       <source
-      media="(min-width: 961px)"
-      srcset="sources\img\footballer_566.png">
-      <source
-      media="(min-width: 641px)"
-      srcset="sources\img\footballer_497.png">
-      <source
       media="(max-width: 640px)"
       srcset="sources\img\footballer_192.png">
+      <source
+      media="(max-width: 960px)"
+      srcset="sources\img\footballer_497.png">
       <img class="img" src="sources\img\footballer_566.png" alt="footballer">
     </picture>
     <h2 class="section_title athlets_title">athlets</h2>
@@ -101,16 +102,12 @@ to training classes, tutor sessions, etc</p>
       </div>
     </article>
     <picture class="basketballer">
-      <!-- почему не работает тег picture??? всегда подгружается изображение из тега <img> -->
-      <source
-      media="(min-width: 961px)"
-      srcset="sources\img\basketballer_991.png">
-      <source
-      media="(min-width: 641px)"
-      srcset="sources\img\basketballer_436.png">
       <source
       media="(max-width: 640px)"
       srcset="sources\img\basketballer_302.png">
+      <source
+      media="(max-width: 960px)"
+      srcset="sources\img\basketballer_436.png">
       <img class="img" src="sources\img\basketballer_991.png" alt="basketballer">
     </picture>
   </section>
@@ -122,14 +119,11 @@ to training classes, tutor sessions, etc</p>
   </div>
   <picture class="img_box">
     <source
-    media="(min-width: 961px)"
-    srcset="sources\img\be-active.jpg">
-    <source
-    media="(min-width: 641px)"
-    srcset="sources\img\be-active_960.jpg">
-    <source
     media="(max-width: 640px)"
     srcset="sources\img\be-active_640.jpg">
+    <source
+    media="(max-width: 960px)"
+    srcset="sources\img\be-active_960.jpg">
     <img class="img" src="sources\img\be-active.jpg" alt="be active picture">
   </picture>
   <div class="article_discription">
@@ -139,21 +133,21 @@ to be more popular.</p>
   </div>
 </div>
 <div class="article">
-  <picture class="img_box second_article_img">
-    <source
-    media="(min-width: 961px)"
-    srcset="sources\img\find-contact_1024.jpg">
-    <source
-    media="(min-width: 641px)"
-    srcset="sources\img\find-contact_960.jpg">
-    <source
-    media="(max-width: 640px)"
-    srcset="sources\img\find-contact_640.jpg">
-    <img class="img" src="sources\img\find-contact.jpg" alt="find contact picture">
-  </picture>
   <div class="article_number_box second_number_box">
     <span class="article_number">02</span>
   </div>
+  <picture class="img_box second_article_img">
+    <source
+    media="(max-width: 640px)"
+    srcset="sources\img\find-contact_640.jpg">
+    <source
+    media="(max-width: 960px)"
+    srcset="sources\img\find-contact_960.jpg">
+    <source
+    media="(max-width: 1365px)"
+    srcset="sources\img\find-contact_1024.jpg">
+    <img class="img" src="sources\img\find-contact.jpg" alt="find contact picture">
+  </picture>
   <div class="article_discription find_contact">
     <h2 class="article_head_title">find contact</h2>
     <p class="article_text">Contact others to find right coach or athlete you are
@@ -166,14 +160,14 @@ looking for.</p>
   </div>
   <picture class="img_box">
     <source
-    media="(min-width: 961px)"
-    srcset="sources\img\work-it_1024.jpg">
-    <source
-    media="(min-width: 641px)"
-    srcset="sources\img\work-it_960.jpg">
-    <source
     media="(max-width: 640px)"
     srcset="sources\img\work-it_640.jpg">
+    <source
+    media="(max-width: 960px)"
+    srcset="sources\img\work-it_960.jpg">
+    <source
+    media="(max-width: 1365px)"
+    srcset="sources\img\work-it_1024.jpg">
     <img class="img" src="sources\img\work-it.jpg" alt="work it picture">
   </picture>
   <div class="article_discription">
@@ -190,9 +184,8 @@ enjoyable experience.</p>
       <img class="footer_surface_logo" src="sources\svg\surface_logo.svg" alt="surface logo">
     </div>
     <h2 class="footer_title">
-      <!-- чтобы использовать конструкцию <h2>......<span>......</span></h2> придется оборачивать заголовок в еще один <div>? -->
-      <p class="footer_title_discription">Download app</p>
-      <p class="footer_title_discription_line2">Show everyone what you can do!</p>
+      <span class="footer_title_discription">Download app</span>
+      <span class="footer_title_discription_line2">Show everyone what you can do!</span>
     </h2>
   </div>
     <div class="apps_links footer_links">
