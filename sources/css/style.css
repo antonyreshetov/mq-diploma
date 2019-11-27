@@ -125,8 +125,13 @@ a {
   color: #fff;
 }
 
+.link_text_line_1 {
+  display: block;
+}
+
 .link_text_line_2 {
   font-weight: bold;
+  display: block;
 }
 
 .main_content {
@@ -330,10 +335,16 @@ a {
   line-height: 1;
 }
 
+.footer_title_discription {
+  display: block;
+}
+
 .footer_title_discription_line2 {
-color: #a496ca;
-font-size: 1.875rem;
-font-weight: normal;
+  text-align: center;
+  display: block;
+  color: #a496ca;
+  font-size: 1.875rem;
+  font-weight: normal;
 }
 
 .footer_img_box {
@@ -496,9 +507,9 @@ font-weight: normal;
     bottom: auto;
   }
 
-  .second_number_box {
+  /* .second_number_box {
     margin-top: -11%;
-  }
+  } */
 
   .footer {
     background-image: url("../img/game_767.jpg");
@@ -625,7 +636,6 @@ font-weight: normal;
       width: 87.5%;
       margin: 0 auto;
       padding-top: 60px;
-      /* везде понаставил падинги и маржины в %, но теперь кажется что лучше их делать фиксированными, по вертикали по крайней мере */
       padding-bottom: 50px;
     }
 
@@ -677,19 +687,12 @@ font-weight: normal;
     .article_number_box {
       width: 70px;
       height: 70px;
+      margin-top: 100%;
+      margin-left: 6.25%;
     }
 
     .article_number {
       font-size: 0.875rem;
-    }
-
-    .article_number_box {
-      /*     не знаю как тут правильно поступить чтобы не ехало, кажется нужно менять html разметку, если есть возможность как-то обойтись без этого, подскажите пожалуйста */
-      margin-left: 6.25%;
-    }
-
-    .second_number_box {
-      margin-top: -57px;
     }
 
     .footer_container {
@@ -718,7 +721,6 @@ font-weight: normal;
 
     .footer_links {
       margin-bottom: 25%;
-      text-align: center;
     }
 
     .apple_link, .android_link:nth-child(2) {
