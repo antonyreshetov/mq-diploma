@@ -616,7 +616,7 @@ a {
       margin-left: auto;
       margin-right: auto;
       width: 87.5%;
-      margin-bottom: 73%;
+      margin-bottom: 80%;
     }
 
     .article_title {
@@ -645,7 +645,9 @@ a {
 
     .footballer, .basketballer {
       /* не знаю как тут правильно поступить чтобы не ехало, кажется нужно менять html разметку, если есть возможность как-то обойтись без этого, подскажите пожалуйста */
-      margin: 25% auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 16%;
       width: 54%;
       min-width: 200px;
       top: 0;
@@ -655,8 +657,12 @@ a {
     }
 
     .basketballer {
-      margin-top: 1090px;
       width: 96.875%;
+    }
+
+    .basket {
+      position: absolute;
+      bottom: 580px;
     }
 
     .connection {
